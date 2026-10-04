@@ -107,23 +107,7 @@ limma-voom
 duplicateCorrelation
 
 **Workflow**
-Counts
-  ↓
-filterByExpr()
-  ↓
-estimateDisp()
-  ↓
-voom()
-  ↓
-duplicateCorrelation()
-  ↓
-voom()
-  ↓
-lmFit()
-  ↓
-contrasts.fit()
-  ↓
-eBayes()
+Counts -> filterByExpr() -> estimateDisp() -> voom() -> duplicateCorrelation() -> voom() -> lmFit() -> contrasts.fit() -> eBayes()
 
 **Patient-level blocking**
 Multiple ROIs are sampled from each patient.
